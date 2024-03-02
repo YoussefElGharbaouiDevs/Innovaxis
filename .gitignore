@@ -8,3 +8,11 @@ Innovaxis.Api/obj/
 # Ignore bin and obj directories in Innovaxis.Infrastructure
 Innovaxis.Infrastructure/bin/
 Innovaxis.Infrastructure/obj/
+
+
+# Ignore bin and obj directories in Innovaxis.Infrastructure
+Innovaxis.Domain/bin/
+Innovaxis.Domain/obj/
+
+#Ignore user settings
+Innovaxis.sln.DotSettings
