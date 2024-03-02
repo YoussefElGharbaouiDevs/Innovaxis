@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Innovaxis.Infrastructure.Common;
+namespace Innovaxis.Domain.Models.Common;
 
 public class BaseEntity
 {

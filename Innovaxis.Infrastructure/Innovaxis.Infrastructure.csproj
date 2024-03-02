@@ -20,7 +20,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Common\" />
       <Folder Include="Utils\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Innovaxis.Domain\Innovaxis.Domain.csproj" />
     </ItemGroup>
 
 </Project>

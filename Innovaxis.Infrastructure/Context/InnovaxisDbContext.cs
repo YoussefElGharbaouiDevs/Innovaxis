@@ -1,4 +1,4 @@
-﻿using Innovaxis.Infrastructure.Models;
+﻿using Innovaxis.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Innovaxis.Infrastructure.Context;
