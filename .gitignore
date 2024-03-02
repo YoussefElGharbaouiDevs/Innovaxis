@@ -1,0 +1,10 @@
+# Ignore .idea directory
+.idea/
+
+# Ignore bin and obj directories in Innovaxis.Api
+Innovaxis.Api/bin/
+Innovaxis.Api/obj/
+
+# Ignore bin and obj directories in Innovaxis.Infrastructure
+Innovaxis.Infrastructure/bin/
+Innovaxis.Infrastructure/obj/
