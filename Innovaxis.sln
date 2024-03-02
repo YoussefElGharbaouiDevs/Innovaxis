@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Innovaxis.Api", "Innovaxis.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Innovaxis.Infrastructure", "Innovaxis.Infrastructure\Innovaxis.Infrastructure.csproj", "{349BB1B8-19C1-421E-9180-FE03E718C82C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Innovaxis.Domain", "Innovaxis.Domain\Innovaxis.Domain.csproj", "{AB92BB86-1CF2-4043-8B9C-32143FDC3024}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{349BB1B8-19C1-421E-9180-FE03E718C82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{349BB1B8-19C1-421E-9180-FE03E718C82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{349BB1B8-19C1-421E-9180-FE03E718C82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB92BB86-1CF2-4043-8B9C-32143FDC3024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB92BB86-1CF2-4043-8B9C-32143FDC3024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB92BB86-1CF2-4043-8B9C-32143FDC3024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB92BB86-1CF2-4043-8B9C-32143FDC3024}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
