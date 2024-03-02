@@ -1,7 +1,7 @@
 ﻿using Innovaxis.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Innovaxis.Infrastructure.Repositories;
+namespace Innovaxis.Infrastructure.Common;
 
 public class GenericRepository<T> : IGenericRepository<T> where T : class
 {

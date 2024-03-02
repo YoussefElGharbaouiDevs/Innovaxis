@@ -1,4 +1,4 @@
-﻿namespace Innovaxis.Infrastructure.Repositories;
+﻿namespace Innovaxis.Infrastructure.Common;
 
 public interface IGenericRepository<T> where T : class
 {
