@@ -1,7 +1,6 @@
 ﻿using Innovaxis.Domain.Models;
-using Innovaxis.Infrastructure.Common;
 
-namespace Innovaxis.Infrastructure.Repositories.Tasks;
+namespace Innovaxis.Domain.Repositories.Tasks;
 
 public interface ITaskRepository : IGenericRepository<TaskEntity>
 {

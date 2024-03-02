@@ -1,7 +1,6 @@
 ﻿using Innovaxis.Domain.Models;
-using Innovaxis.Infrastructure.Common;
 
-namespace Innovaxis.Infrastructure.Repositories.Categories;
+namespace Innovaxis.Domain.Repositories.Categories;
 
 public interface ICategoryRepository : IGenericRepository<CategoryEntity>
 {

@@ -1,4 +1,5 @@
-﻿using Innovaxis.Infrastructure.Context;
+﻿using Innovaxis.Domain.Repositories;
+using Innovaxis.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace Innovaxis.Infrastructure.Common;
