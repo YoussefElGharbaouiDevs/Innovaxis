@@ -6,5 +6,5 @@ public class CategoryEntity : BaseEntity
 {
     public required string Name { get; set; }
 
-    public ICollection<Task> Tasks { get; set; } = new List<Task>();
+    public ICollection<TaskEntity> Tasks { get; set; } = new List<TaskEntity>();
 }
