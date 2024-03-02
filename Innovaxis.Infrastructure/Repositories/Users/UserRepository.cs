@@ -1,4 +1,5 @@
 ﻿using Innovaxis.Domain.Models;
+using Innovaxis.Domain.Repositories.Users;
 using Innovaxis.Infrastructure.Common;
 using Innovaxis.Infrastructure.Context;
 
