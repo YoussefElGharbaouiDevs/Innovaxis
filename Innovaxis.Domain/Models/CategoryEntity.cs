@@ -1,6 +1,6 @@
-﻿using Innovaxis.Infrastructure.Common;
+﻿using Innovaxis.Domain.Models.Common;
 
-namespace Innovaxis.Infrastructure.Models;
+namespace Innovaxis.Domain.Models;
 
 public class CategoryEntity : BaseEntity
 {

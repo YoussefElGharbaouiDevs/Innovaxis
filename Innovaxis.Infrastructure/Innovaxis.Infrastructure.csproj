@@ -23,4 +23,8 @@
       <Folder Include="Utils\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Innovaxis.Domain\Innovaxis.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
