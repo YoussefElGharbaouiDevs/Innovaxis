@@ -1,7 +1,7 @@
 ﻿using Innovaxis.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Innovaxis.Infrastructure.Context;
+namespace Innovaxis.Infrastructure.Data.Context;
 
 public sealed class InnovaxisDbContext : DbContext
 {
