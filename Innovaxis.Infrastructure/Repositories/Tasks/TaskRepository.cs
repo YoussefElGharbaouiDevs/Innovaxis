@@ -1,7 +1,7 @@
 ﻿using Innovaxis.Domain.Models;
 using Innovaxis.Domain.Repositories.Tasks;
 using Innovaxis.Infrastructure.Common;
-using Innovaxis.Infrastructure.Context;
+using Innovaxis.Infrastructure.Data.Context;
 
 namespace Innovaxis.Infrastructure.Repositories.Tasks;
 
