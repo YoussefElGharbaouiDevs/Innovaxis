@@ -12,44 +12,43 @@ public class UserService : IUserService
         _userRepository = userRepository;
     }
 
-    //TODO : Implement the service methods
-    public Task<IEnumerable<UserEntity>> FindAllUsersAsync()
+    public async Task<IEnumerable<UserEntity>> FindAllUsersAsync()
     {
-        throw new NotImplementedException();
+        return await _userRepository.FindAllAsync();
     }
 
-    public Task<UserEntity?> FindAUserAsync(Guid id)
+    public async Task<UserEntity?> FindAUserAsync(Guid id)
     {
-        throw new NotImplementedException();
+        return await _userRepository.FindAsync(id);
     }
 
-    public Task AddUserAsync(UserEntity user)
+    public async Task AddUserAsync(UserEntity user)
     {
-        throw new NotImplementedException();
+        await _userRepository.AddAsync(user);
     }
 
-    public Task AddUsersAsync(IEnumerable<UserEntity> users)
+    public async Task AddUsersAsync(IEnumerable<UserEntity> users)
     {
-        throw new NotImplementedException();
+        await _userRepository.AddRangeAsync(users);
     }
 
-    public Task UpdateUserAsync(UserEntity user)
+    public async Task UpdateUserAsync(UserEntity user)
     {
-        throw new NotImplementedException();
+        await _userRepository.UpdateAsync(user);
     }
 
-    public Task UpdateUsersAsync(IEnumerable<UserEntity> users)
+    public async Task UpdateUsersAsync(IEnumerable<UserEntity> users)
     {
-        throw new NotImplementedException();
+        await _userRepository.UpdateRangeAsync(users);
     }
 
-    public Task RemoveUserAsync(UserEntity user)
+    public async Task RemoveUserAsync(UserEntity user)
     {
-        throw new NotImplementedException();
+        await _userRepository.RemoveAsync(user);
     }
 
-    public Task RemoveUsersRange(IEnumerable<UserEntity> users)
+    public async Task RemoveUsersRange(IEnumerable<UserEntity> users)
     {
-        throw new NotImplementedException();
+        await _userRepository.RemoveRange(users);
     }
 }

@@ -11,45 +11,44 @@ public class CategoryService : ICategoryService
     {
         _categoryRepository = categoryRepository;
     }
-    //TODO : Implement the service methods
 
-    public Task<IEnumerable<CategoryEntity>> FindAllCategoriesAsync()
+    public async Task<IEnumerable<CategoryEntity>> FindAllCategoriesAsync()
     {
-        throw new NotImplementedException();
+        return await _categoryRepository.FindAllAsync();
     }
 
-    public Task<CategoryEntity?> FindACategoryAsync(Guid id)
+    public async Task<CategoryEntity?> FindACategoryAsync(Guid id)
     {
-        throw new NotImplementedException();
+        return await _categoryRepository.FindAsync(id);
     }
 
-    public Task AddCategoryAsync(CategoryEntity category)
+    public async Task AddCategoryAsync(CategoryEntity category)
     {
-        throw new NotImplementedException();
+        await _categoryRepository.AddAsync(category);
     }
 
-    public Task AddCategoriesAsync(IEnumerable<CategoryEntity> categories)
+    public async Task AddCategoriesAsync(IEnumerable<CategoryEntity> categories)
     {
-        throw new NotImplementedException();
+        await _categoryRepository.AddRangeAsync(categories);
     }
 
-    public Task UpdateCategoryAsync(CategoryEntity category)
+    public async Task UpdateCategoryAsync(CategoryEntity category)
     {
-        throw new NotImplementedException();
+        await _categoryRepository.UpdateAsync(category);
     }
 
-    public Task UpdateCategoriesAsync(IEnumerable<CategoryEntity> categories)
+    public async Task UpdateCategoriesAsync(IEnumerable<CategoryEntity> categories)
     {
-        throw new NotImplementedException();
+        await _categoryRepository.UpdateRangeAsync(categories);
     }
 
-    public Task RemoveCategoryAsync(CategoryEntity category)
+    public async Task RemoveCategoryAsync(CategoryEntity category)
     {
-        throw new NotImplementedException();
+        await _categoryRepository.RemoveAsync(category);
     }
 
-    public Task RemoveCategoriesRange(IEnumerable<CategoryEntity> categories)
+    public async Task RemoveCategoriesRange(IEnumerable<CategoryEntity> categories)
     {
-        throw new NotImplementedException();
+        await _categoryRepository.RemoveRange(categories);
     }
 }

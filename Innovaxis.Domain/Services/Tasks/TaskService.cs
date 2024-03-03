@@ -12,44 +12,43 @@ public class TaskService : ITaskService
         _taskRepository = taskRepository;
     }
 
-    //TODO : Implement the service methods
-    public Task<IEnumerable<TaskEntity>> FindAllTasksAsync()
+    public async Task<IEnumerable<TaskEntity>> FindAllTasksAsync()
     {
-        throw new NotImplementedException();
+        return await _taskRepository.FindAllAsync();
     }
 
-    public Task<TaskEntity?> FindATaskAsync(Guid id)
+    public async Task<TaskEntity?> FindATaskAsync(Guid id)
     {
-        throw new NotImplementedException();
+        return await _taskRepository.FindAsync(id);
     }
 
-    public Task AddTaskAsync(TaskEntity task)
+    public async Task AddTaskAsync(TaskEntity task)
     {
-        throw new NotImplementedException();
+        await _taskRepository.AddAsync(task);
     }
 
-    public Task AddTasksAsync(IEnumerable<TaskEntity> tasks)
+    public async Task AddTasksAsync(IEnumerable<TaskEntity> tasks)
     {
-        throw new NotImplementedException();
+        await _taskRepository.AddRangeAsync(tasks);
     }
 
-    public Task UpdateTaskAsync(TaskEntity task)
+    public async Task UpdateTaskAsync(TaskEntity task)
     {
-        throw new NotImplementedException();
+        await _taskRepository.UpdateAsync(task);
     }
 
-    public Task UpdateTasksAsync(IEnumerable<TaskEntity> tasks)
+    public async Task UpdateTasksAsync(IEnumerable<TaskEntity> tasks)
     {
-        throw new NotImplementedException();
+        await _taskRepository.UpdateRangeAsync(tasks);
     }
 
-    public Task RemoveTaskAsync(TaskEntity task)
+    public async Task RemoveTaskAsync(TaskEntity task)
     {
-        throw new NotImplementedException();
+        await _taskRepository.RemoveAsync(task);
     }
 
-    public Task RemoveTasksRange(IEnumerable<TaskEntity> tasks)
+    public async Task RemoveTasksRange(IEnumerable<TaskEntity> tasks)
     {
-        throw new NotImplementedException();
+        await _taskRepository.RemoveRange(tasks);
     }
 }
