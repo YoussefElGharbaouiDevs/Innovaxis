@@ -8,13 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<InnovaxisDbContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddTaskManagementServices();
+builder.Services.AddRepositories();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());        
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddTaskManagementServices();
-builder.Services.AddRepositories();
+
 
 var app = builder.Build();
 
