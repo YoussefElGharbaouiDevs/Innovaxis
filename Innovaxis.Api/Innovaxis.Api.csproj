@@ -14,7 +14,10 @@
     <ItemGroup>
       <Folder Include="Configurations\" />
       <Folder Include="Controllers\" />
-      <Folder Include="Dtos\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Innovaxis.Domain\Innovaxis.Domain.csproj" />
     </ItemGroup>
 
 </Project>
