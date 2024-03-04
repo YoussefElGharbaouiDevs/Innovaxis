@@ -10,7 +10,7 @@ Innovaxis.Infrastructure/bin/
 Innovaxis.Infrastructure/obj/
 
 
-# Ignore bin and obj directories in Innovaxis.Infrastructure
+# Ignore bin and obj directories in Innovaxis.Domain
 Innovaxis.Domain/bin/
 Innovaxis.Domain/obj/
 
